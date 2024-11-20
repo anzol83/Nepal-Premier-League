@@ -141,26 +141,6 @@ body, ul, li, a, img {
 
 }
 
-/* Responsive Design */
- /* @media (max-width: 768px) {
-    .header {
-        flex-wrap: wrap;
-        text-align: center;
-    }
-
-    .follow-us {
-        margin-top: 10px;
-        justify-content: center;
-    }
-
-    .navbar ul {
-        flex-wrap: wrap;
-        gap: 10px;
-    } 
-   
-}   */
-
-   
 
 /* Fixtures Section  */
 
@@ -282,6 +262,92 @@ body, ul, li, a, img {
     padding: 12px;
     text-align: center;
     margin-top: 24px;
+}
+
+
+
+
+
+
+/* Existing CSS Above */
+
+/* Responsive Design */
+
+/* Small Screens (Mobile - Up to 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .follow-us {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .follow-us a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+    .big-box {
+        flex-wrap: wrap;
+        display: block; /* Stack boxes vertically */
+    }
+
+    .box-1, .box-2, .box-3 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .player-1, .highlight-1 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .box-fixtures {
+        padding: 15px;
+    }
+
+    .fixture-row {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .team, .fixture-details {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .partners-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partners-card {
+        width: 100%;
+    }
+
+    .partners-image {
+        width: 90%;
+        height: auto;
+    }
 }
 
 
