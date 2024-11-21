@@ -19,11 +19,13 @@ body, ul, li, a, img {
     background-color: #002366;
     color: white;
     font-family: Arial, sans-serif;
+    flex-wrap: wrap;
 }
 
 /* Logo Section */
 .logo img {
-    height: 50px; 
+    height: 50px;
+    margin-left: 12px;
 }
 
 /* Follow Us Section */
@@ -31,12 +33,15 @@ body, ul, li, a, img {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-right: 2px;
+    
 }
 
 .follow-us a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 12px;
     width: 40px;
     height: 40px;
     background-color: white; /* Background to improve visibility */
@@ -59,8 +64,13 @@ body, ul, li, a, img {
 .navbar {
     background-color: #dc143c; /* Crimson Red Background */
     padding: 10px 0;
+    width: 100%;
     justify-content: center;
     display: flex;
+    /* top: 10%; */
+    margin-top: 0px;
+    flex-wrap: wrap;
+    
 }
 
 .navbar ul {
@@ -97,6 +107,7 @@ body, ul, li, a, img {
     margin-top: 24px;
     display: flex;
     padding: 12px;
+    flex-wrap: wrap;
 
 
 }
@@ -135,8 +146,8 @@ body, ul, li, a, img {
 }
 
 .highlight-1{
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 240px;
     border-radius: 12px;
 
 }
@@ -239,7 +250,6 @@ body, ul, li, a, img {
     
 }
 
-
 .partners-image{
     height: 300px;
     width: 350px;
@@ -264,9 +274,17 @@ body, ul, li, a, img {
     margin-top: 24px;
 }
 
+/* Fixtures Section next web page  */
+
+.fixtures-image{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
 
 
-
+}
 
 
 /* Existing CSS Above */
@@ -274,11 +292,12 @@ body, ul, li, a, img {
 /* Responsive Design */
 
 /* Small Screens (Mobile - Up to 768px) */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .header {
         flex-wrap: wrap;
         text-align: center;
-        padding: 10px;
+        padding: 0px;
+        
     }
 
     .logo img {
@@ -288,6 +307,7 @@ body, ul, li, a, img {
     .follow-us {
         justify-content: center;
         margin-top: 10px;
+        margin-right: 12px;
     }
 
     .follow-us a {
@@ -307,7 +327,7 @@ body, ul, li, a, img {
 
     .big-box {
         flex-wrap: wrap;
-        display: block; /* Stack boxes vertically */
+        display: block; 
     }
 
     .box-1, .box-2, .box-3 {
@@ -341,14 +361,14 @@ body, ul, li, a, img {
     }
 
     .partners-card {
-        width: 100%;
+        width: 60%;
     }
 
     .partners-image {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
-}
+} */
 
 
 
