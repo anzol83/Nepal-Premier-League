@@ -108,23 +108,24 @@ body, ul, li, a, img {
     display: flex;
     padding: 12px;
     flex-wrap: wrap;
+    display: flex;
 
 
 }
 
 .box-1{
-    /* display: flex; */
+    display: flex;
     /* border: 2px solid black; */
     flex-direction: column;
-    flex-basis: 33%;
+    flex-basis: 30%;
     padding: 12px;
     align-items: center;
 }
 .box-2{
     /* border: 2px solid black; */
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
-    flex-basis: 34%;
+    flex-basis: 30%;
     padding: 12px;
 }
 
@@ -132,8 +133,8 @@ body, ul, li, a, img {
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    flex-basis: 33%;
-    padding: 12px;
+    flex-basis: 25%;
+    /* padding: px; */
     align-items: center;
     
 }
@@ -282,32 +283,59 @@ body, ul, li, a, img {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 12px;
-
-
 }
 
 
-/* Existing CSS Above */
 
-/* Responsive Design */
 
-/* Small Screens (Mobile - Up to 768px) */
-/* @media (max-width: 768px) {
+/* Teams Section next web page */
+
+/* Recommendation Card  */
+
+.recommendation-card{
+    box-shadow: var(--box-shadow);
+    width: 250px;
+    border-radius: 12px;
+    
+}
+
+.recommendation-image{
+    height: 150px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.recommendation-card-body {
+    padding: 0 12px 12px 12px;
+}
+
+.recommendation-title{
+    /* border: 1px solid black; */
+    text-align: center;
+    
+}
+
+/* Responsive Design for Mobile (Up to 760px) */
+@media (max-width: 760px) {
+    /* Header Section */
     .header {
         flex-wrap: wrap;
         text-align: center;
-        padding: 0px;
-        
+        padding: 10px;
     }
 
     .logo img {
         height: 40px;
+        margin: 0 auto;
     }
 
     .follow-us {
         justify-content: center;
         margin-top: 10px;
-        margin-right: 12px;
+    }
+
+    .follow-us h4 {
+        font-size: 14px;
     }
 
     .follow-us a {
@@ -315,6 +343,7 @@ body, ul, li, a, img {
         height: 35px;
     }
 
+    /* Navbar Section */
     .navbar ul {
         flex-wrap: wrap;
         gap: 10px;
@@ -325,9 +354,16 @@ body, ul, li, a, img {
         font-size: 14px;
     }
 
+    /* Image Container */
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* News and Highlights Section */
     .big-box {
-        flex-wrap: wrap;
-        display: block; 
+        flex-direction: column;
+        padding: 10px;
     }
 
     .box-1, .box-2, .box-3 {
@@ -339,8 +375,10 @@ body, ul, li, a, img {
     .player-1, .highlight-1 {
         width: 150px;
         height: 150px;
+        margin: 0 auto;
     }
 
+    /* Fixtures Section */
     .box-fixtures {
         padding: 15px;
     }
@@ -355,23 +393,26 @@ body, ul, li, a, img {
         margin-bottom: 10px;
     }
 
+    /* Sponsors Section */
     .partners-container {
         flex-direction: column;
         align-items: center;
     }
 
     .partners-card {
-        width: 60%;
+        width: 80%;
     }
 
     .partners-image {
         width: 100%;
         height: auto;
     }
-} */
 
-
-
+    /* Footer Section */
+    .footer {
+        font-size: 18px;
+    }
+}
 
 
 
